@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+hr {
+    border: 1px solid gray;
+}
+
+/* Navbar CSS Here */
+
+#searchBar {
+    margin-left: 35px;
+    width: 40%;
+}
+
+.nav-item {
+    margin: 0px 5px;
+}
+
+
+/* You Got Plans img CSS */
+#youGotPlans {
+    background-color: rgba(248, 220, 227, 0.38);
+}
+
+#youGotPlans>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+}
+
+#youGotPlans>div>div>button {
+    margin-top: 8px;
+}
+
+#youGotPlans>div>div>button>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Cards Section  */
+#browsLocation {
+    margin: 0px 50px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0px 40px;
+}
+
+.card {
+    /* width: 250px; */
+    margin: 5px 5px;
+}
+
+.card-text {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* User based interest button link */
+#userInterest {
+    background-color: rgb(248, 247, 250);
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px 45px;
+    padding: 25px 0px;
+}
+
+.userInterestHeading {
+    margin: 10px 20px;
+}
+
+.userInterestHeading>span {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#userInterestButton {
+    margin: 10px 0px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#userInterestButton>button {
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    text-decoration: none;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: rgb(45, 55, 60);
+    margin-top: 100px;
+}
+
+.footer-pad {
+    color: white;
+    cursor: default;
+}
+h4{
+    color: white;
+}
+
+.footer-pad>h4>span {
+    color: red;
+    font-family: Broadway;
+    font-weight: bolder;
+}
+
+.copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.footer-middle {
+    padding-top: 2em;
+    color: black;
+}
+
+.list-unstyled>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+.list-unstyled>li>a:hover {
+    color: red;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoInstagram:hover {
+    background-color: red;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoInstagram:hover i {
+    color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: gray;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-network a {
+    background-color: #F9F9F9;
+}
+
+
+/* Media Query */
+@media (max-width: 991px) {
+    #searchBar {
+        margin: 5px 0px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 580px) {
+    #youGotPlans {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #browsLocation {
+        /* width: 100%; */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #cards {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
